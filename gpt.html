@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Roshan Ara - Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: url('back.jpg') center center fixed;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+        }
+
+        header {
+            padding: 20px;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            /* Added margin to create space */
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+            /* Adjust the font size as needed */
+            font-weight: bold;
+            font-family: 'Assistant', sans-serif;
+            /* Use Assistant SemiBold font */
+            letter-spacing: 2px;
+            line-height: normal;
+            /* Added letter spacing */
+        }
+
+        p {
+            margin: 0;
+            font-family: 'Linotype Didot', serif;
+            /* Use Linotype Didot font for the paragraph */
+            letter-spacing: 1px;
+            /* Added letter spacing */
+            line-height: 2.0;
+            /* Set line spacing to 2.0 */
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: transparent;
+            padding-top: 20px;
+            color: #fff;
+            text-align: center;
+            z-index: 1;
+            display: none;
+        }
+
+        nav a {
+            display: block;
+            padding: 10px;
+            color: #fff;
+            text-decoration: none;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .menu-icon {
+            display: block;
+            cursor: pointer;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            color: #fff;
+            font-size: 24px;
+            z-index: 2;
+        }
+
+        section {
+            background-color: transparent;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+        }
+
+        #home {
+            background: url('back.jpg') center center fixed;
+            background-size: cover;
+        }
+
+        #home img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #home img::before {
+            content: url('Ring.gif');
+            /* Replace 'border.gif' with your actual GIF URL */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        #home h2 {
+            color: #ff5733;
+            /* Custom color for the 'Home' section */
+            font-family: 'Arial', sans-serif;
+            /* Custom font for the 'Home' section */
+        }
+
+        #intro {
+            background: url('back.jpg') center center fixed;
+            background-size: cover;
+            background-color: lavender;
+        }
+
+        #intro h2 {
+            color: #00ff00;
+            /* Custom color for the 'Intro' section */
+            font-family: 'Times New Roman', serif;
+            /* Custom font for the 'Intro' section */
+        }
+
+        #cv {
+            background: url('back.jpg') center center fixed;
+            background-size: cover;
+            background-color: lavender;
+        }
+
+        #cv h2 {
+            color: #fbff00;
+            /* Custom color for the 'CV' section */
+            font-family: 'Courier New', monospace;
+            /* Custom font for the 'CV' section */
+        }
+
+        #cv button {
+            background-color: #4285f4;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        #cv button.download {
+            background-color: #e74c3c;
+        }
+
+        #contact {
+            background: url('back.jpg') center center fixed;
+            background-size: cover;
+            background-color: lavender;
+        }
+
+        #contact h2 {
+            color: #ff00ff;
+            /* Custom color for the 'Contact' section */
+            font-family: 'Verdana', sans-serif;
+            /* Custom font for the 'Contact' section */
+        }
+
+        @media only screen and (max-width: 600px) {
+            nav {
+                height: 100%;
+            }
+
+            nav a {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            section {
+                margin-top: 70px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+    <nav id="mainNav">
+        <a onclick="showSection('home')">Home</a>
+        <a onclick="showSection('intro')">My Intro</a>
+        <a onclick="showSection('cv')">CV</a>
+        <a onclick="showSection('contact')">Contact Me</a>
+    </nav>
+
+    <header>
+        <h1><span style="color: black;">Hey! I'm </span><span style="color: red;">Mohammad Roshan Ara</span></h1>
+        <p>A college student, lifelong learner, and emerging life adventurer.</p>
+    </header>
+
+    <section id="home">
+        <img src="C:\Users\91863\Downloads\ara pic.jpg" alt="Mohammad Roshan Ara">
+        <h2>Welcome to My Portfolio</h2>
+        <p>This is the homepage of my portfolio. Feel free to explore the sections using the navigation links on the
+            left.</p>
+    </section>
+
+    <section id="intro">
+        <h2>My Intro</h2>
+        <p>I'm Mohammad Roshan Ara, pursuing my Btech in Malla Reddy College of Engineering and Technology, and my
+            stream
+            is Computer Science and Engineering.</p>
+        <p>I am passionate about pursuing my major in Information Technology and Computer Science. My goal is to get a
+            job in the software field after graduating.</p>
+        <p>I enjoy solving technical problems, researching and developing new technologies, designing software
+            applications for different platforms. I am also interested in pursuing degree programs in Information
+            Systems Management, Computer Engineering, or Computer Science. I enjoy meeting people and working with them
+            in a team environment. I also enjoy interacting with clients and customers. My strong customer service
+            skills allow me to do this well. I am a quick learner with a fun, outgoing personality. In addition, I excel
+            in my ability to work under pressure and handle stressful situations very well.</p>
+        <p>These skills that I have will be beneficial for any competitive company.</p>
+    </section>
+
+    <section id="cv">
+        <h2>Curriculum Vitae (CV)</h2>
+        <p>This is my CV. You can view or download it using the buttons below.</p>
+
+        <!-- View CV button -->
+        <button onclick="viewCV()">View CV</button>
+
+        <!-- Download CV button -->
+        <button onclick="downloadCV()" class="download">Download CV</button>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: roshni9963@gmail.com</p>
+        <p>LinkedIn: linkedin.com/in/roshan-ara-47008824b</p>
+        <p>GitHub: https://github.com/Roshanara12</p>
+    </section>
+
+    <script>
+        function viewCV() {
+            // Replace 'your_cv.pdf' with the actual filename of your CV
+            window.open('ara resume.pdf', '_blank');
+        }
+
+        function downloadCV() {
+            // Replace 'your_cv.pdf' with the actual filename of your CV
+            var link = document.createElement('a');
+            link.href = 'ara resume.pdf';
+            link.download = 'ara resume.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        function showSection(sectionId) {
+            // Hide all sections
+            var sections = document.querySelectorAll('section');
+            sections.forEach(function (section) {
+                section.style.display = 'none';
+            });
+
+            // Show the clicked section
+            var selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.style.display = 'flex';
+            }
+
+            // Close the menu on section click (for small screens)
+            hideMenu();
+        }
+
+        function toggleMenu() {
+            var nav = document.getElementById('mainNav');
+            var sections = document.querySelectorAll('section');
+            nav.style.display = nav.style.display === 'none' ? 'block' : 'none';
+            sections.forEach(function (section) {
+                section.style.display = 'none';
+            });
+        }
+
+        function hideMenu() {
+            var nav = document.getElementById('mainNav');
+            nav.style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
